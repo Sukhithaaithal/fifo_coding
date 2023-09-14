@@ -14,8 +14,8 @@ module design_n(clk, rstn, i_wrdata, i_wren, i_rden, o_full, o_empty, o_alm_full
  
   assign o_full = (cur_ptr == 'b1111);
   assign o_empty = (cur_ptr == 'b0000);
-  assign o_alm_full = (cur_ptr == 'b1010);
-  assign o_alm_empty = (cur_ptr == 'b0100);
+  // assign o_alm_full = (cur_ptr == 'b1010);
+  // assign o_alm_empty = (cur_ptr == 'b0100);
   
   always@(posedge clk)begin
     if(rstn == 1)begin
