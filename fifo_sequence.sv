@@ -12,7 +12,7 @@
      repeat(20) begin
       req = fifo_sequence_item::type_id::create("req");
       start_item(req);
-     assert(req.randomize() with {i_wren == 1;});
+     assert(req.randomize() with {i_wren == 1 && i_rden == 0 ;});
       finish_item(req);
     end
 
@@ -20,7 +20,7 @@
      repeat(20) begin
       req = fifo_sequence_item::type_id::create("req");
       start_item(req);
-     assert(req.randomize() with {i_rden == 1;});
+     assert(req.randomize() with {i_rden == 1 && i_wren == 0;});
       finish_item(req);
     end
 
