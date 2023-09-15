@@ -23,7 +23,7 @@ class fifo_scoreboard extends uvm_scoreboard;
           begin
           $display("---------FIFO IS FULL------------");
       end
-      `uvm_info("write Data", $sformatf("write: %0d read: %0d wrdata: %0d full: %0d",item_got.i_wren, item_got.i_rden,item_got.i_wrdata, item_got.o_full), UVM_LOW);
+      `uvm_info("write Data", $sformatf("write: %0d read: %0d wrdata: %0d full: %0d almost full: %0d",item_got.i_wren, item_got.i_rden,item_got.i_wrdata, item_got.o_full, item_got.o_alm_full), UVM_LOW);
     end
     
      if (item_got.i_rden == 'b1)begin
@@ -34,7 +34,7 @@ class fifo_scoreboard extends uvm_scoreboard;
          begin
            $display("-------FIFO IS EMPTY---------");
          end
-       `uvm_info("Read Data", $sformatf("examdata: %0d rddata: %0d empty: %0d", examdata, item_got.o_rddata, item_got.o_empty), UVM_LOW);
+       `uvm_info("Read Data", $sformatf("examdata: %0d rddata: %0d empty: %0d almost empty: %0d", examdata, item_got.o_rddata, item_got.o_empty, item_got.o_alm_empty), UVM_LOW);
         if(examdata == item_got.o_rddata)begin
           $display("-------- Pass! --------");
         end

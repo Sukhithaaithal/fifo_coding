@@ -1,0 +1,273 @@
+# vsim -c work.tb -l tb.log 
+# Start time: 16:46:28 on Sep 14,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.fifo_interface(fast)
+# ** Warning: (vsim-8637) fifo_monitor.sv(21): A modport ('m_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(17): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(18): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(19): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(31): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(32): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(33): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(40): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# ** Warning: (vsim-8637) fifo_driver.sv(41): A modport ('d_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit::fifo_driver File: testbench.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test fifo_test...
+# UVM_INFO fifo_sequence.sv(10) @ 0: uvm_test_top.fifo_env.fifo_agt.fifo_seqr@@fifo_seq [fifo_sequence] ******** Generate 1024 Write REQs ********
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 30: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 91090488712156867585101972194031723004 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 50: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 131128557536824046566972239064445793693 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 70: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 72530667350567275290263945973907042377 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 90: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 276895030207933935080303064519228258590 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 110: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 60874916161685897297419394535330866510 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 130: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 27960407870812413107282147200433850907 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 150: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 336139792256077696960580430868253352327 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 170: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 285861173806084514394452118013681303201 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 190: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 298460858609452180313298568548798350799 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 210: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 9296910961469160945248947909090052691 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 230: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 98509774736253017766152345400720685561 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 250: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 321348046911360473965355721823571098501 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 270: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 39173626345599266112637246544173078026 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 290: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 24762832624237620656201918546916590592 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 310: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 45110389423694229626260512521351656900 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 330: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 299481343797077978666325823551547492253 full: 1
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 350: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 31495445715704549193062402285210204414 full: 1
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 370: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 62525547441086765822246511174348350608 full: 1
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 390: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 221306266917642274158180303793651723625 full: 1
+# UVM_INFO fifo_sequence.sv(18) @ 400: uvm_test_top.fifo_env.fifo_agt.fifo_seqr@@fifo_seq [fifo_sequence] ******** Generate 1024 Read REQs ********
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 410: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 67069382648369994912514686489809051043 full: 1
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 430: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 151339315629485938845635098284721759862 full: 1
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 460: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 91090488712156867585101972194031723004 rddata: 91090488712156867585101972194031723004 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 470: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 112726861248399146906916879927409848866 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 500: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 131128557536824046566972239064445793693 rddata: 131128557536824046566972239064445793693 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 520: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 72530667350567275290263945973907042377 rddata: 72530667350567275290263945973907042377 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 540: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 276895030207933935080303064519228258590 rddata: 276895030207933935080303064519228258590 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 550: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 49497274012466372495085645266756009243 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 580: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 60874916161685897297419394535330866510 rddata: 60874916161685897297419394535330866510 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 590: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 302333200838208968903404545075533546651 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 620: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 27960407870812413107282147200433850907 rddata: 27960407870812413107282147200433850907 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 630: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 215865269494678113522893101664219784190 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 660: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 336139792256077696960580430868253352327 rddata: 336139792256077696960580430868253352327 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 680: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 285861173806084514394452118013681303201 rddata: 285861173806084514394452118013681303201 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 700: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 298460858609452180313298568548798350799 rddata: 298460858609452180313298568548798350799 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 710: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 84387127836069829178580315200539986112 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 740: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 9296910961469160945248947909090052691 rddata: 9296910961469160945248947909090052691 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 760: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 98509774736253017766152345400720685561 rddata: 98509774736253017766152345400720685561 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 770: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 277533636629216516849321321339195303743 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 800: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 321348046911360473965355721823571098501 rddata: 321348046911360473965355721823571098501 empty: 0
+# -------- Pass! --------
+# UVM_INFO fifo_sequence.sv(26) @ 800: uvm_test_top.fifo_env.fifo_agt.fifo_seqr@@fifo_seq [fifo_sequence] ******** Generate 1024 Random REQs ********
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 820: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 39173626345599266112637246544173078026 rddata: 39173626345599266112637246544173078026 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 830: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 159081882489010966108221037952150451145 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 850: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 65802122431774973176038993356841286344 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 880: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 24762832624237620656201918546916590592 rddata: 24762832624237620656201918546916590592 empty: 0
+# -------- Pass! --------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 900: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 45110389423694229626260512521351656900 rddata: 45110389423694229626260512521351656900 empty: 0
+# -------- Pass! --------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 910: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 202096447602298448035084109028809475392 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 940: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 299481343797077978666325823551547492253 rddata: 112726861248399146906916879927409848866 empty: 0
+# -------Fail!-------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 950: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 283497298098206267327568620851408902078 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 970: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 235867703872629776303847621481249678300 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 990: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 338384883519093376306525340986727767353 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 1020: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 31495445715704549193062402285210204414 rddata: 49497274012466372495085645266756009243 empty: 0
+# -------Fail!-------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 1040: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 62525547441086765822246511174348350608 rddata: 302333200838208968903404545075533546651 empty: 0
+# -------Fail!-------
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 1060: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 221306266917642274158180303793651723625 rddata: 215865269494678113522893101664219784190 empty: 0
+# -------Fail!-------
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 1070: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 322415317933095193718004216426707387269 full: 0
+# 
+# WR is high
+# UVM_INFO fifo_scoreboard.sv(26) @ 1090: uvm_test_top.fifo_env.fifo_scb [write Data] write: 1 read: 0 wrdata: 51439055639787375159864125964321095838 full: 0
+# 
+# RD is high
+# UVM_INFO fifo_scoreboard.sv(37) @ 1120: uvm_test_top.fifo_env.fifo_scb [Read Data] examdata: 67069382648369994912514686489809051043 rddata: 84387127836069829178580315200539986112 empty: 0
+# -------Fail!-------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1200: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   62
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [Read Data]    20
+# [TEST_DONE]     1
+# [fifo_sequence]     3
+# [write Data]    35
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1200 ns  Iteration: 53  Instance: /tb
+# End time: 16:46:41 on Sep 14,2023, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 9

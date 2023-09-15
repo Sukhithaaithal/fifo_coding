@@ -14,8 +14,8 @@ module design_n(clk, rstn, i_wrdata, i_wren, i_rden, o_full, o_empty, o_alm_full
  
   assign o_full = (cur_ptr == 'b1111);
   assign o_empty = (cur_ptr == 'b0000);
-  // assign o_alm_full = (cur_ptr == 'b1010);
-  // assign o_alm_empty = (cur_ptr == 'b0100);
+  assign o_alm_full = (cur_ptr >= 'b1010);
+  assign o_alm_empty = (cur_ptr <= 'b0100);
   
   always@(posedge clk)begin
     if(rstn == 1)begin
@@ -34,24 +34,20 @@ module design_n(clk, rstn, i_wrdata, i_wren, i_rden, o_full, o_empty, o_alm_full
         o_rddata <= memory[rd_ptr];
         rd_ptr <= rd_ptr + 1;
       end
+      if(i_wren == 1 && o_full !=1 && o_alm_full >= 1020) begin
+        memory[wr_ptr] <= i_wrdata;
+        wr_ptr <= wr_ptr+1;
+      end
+      if(i_rden == 1 && o_empty!=1 && o_alm_empty <= 4)  begin
+         o_rddata <= memory[rd_ptr];
+         rd_ptr <= rd_ptr + 1;
+      end
       cur_ptr = wr_ptr - rd_ptr;
     end
   end
-
-   always @(*) begin
-     if ((wr_ptr >= rd_ptr) && (cur_ptr >= 1020)) begin
-      o_alm_full = 1'b1;
-    end 
-     else 
-       begin
-      o_alm_full = 1'b0;
-    end
-     if((rd_ptr >= wr_ptr) && (cur_ptr <= 2)) begin
-       o_alm_empty = 1'b1;
-     end
-     else
-       begin
-         o_alm_empty = 1'b0;
-       end
-  end
 endmodule
+
+
+
+
+
